@@ -56,7 +56,7 @@ function App() {
           </Router>
         </div>
       ) : (
-        <div className="auth h-100 w-screen d-flex  align-  items-center border border-2 border-danger ">
+        <div className="auth h-100 w-screen d-flex  align-  items-center  ">
           {haveAccount ? (
             <Login
               haveAccount={haveAccount}
