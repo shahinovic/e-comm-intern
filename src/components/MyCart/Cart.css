@@ -1,0 +1,121 @@
+.shop-cart {
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.952);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+.shop-cart .products {
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+}
+
+.shop-cart .cart-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.shop-cart .cart-item .cart-item-image {
+  width: 100px;
+  height: 100px;
+}
+
+.shop-cart .cart-item .cart-item-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop-cart .cart-item-quantity {
+  height: 100%;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.shop-cart .cart-item-quantity-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+
+.shop-cart .cart-item-quantity-actions > * {
+  flex-basis: 33.33%;
+  display: grid;
+  place-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  user-select: none;
+}
+
+.cart-item-quantity-minus,
+.cart-item-quantity-plus {
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+.cart-item-quantity-minus {
+  border: 1px solid red;
+  background-color: rgba(205, 92, 92, 0.288);
+  color: red;
+}
+
+.cart-item-quantity-plus {
+  border: 1px solid #21d192;
+  background-color: #18926731;
+  color: #21d192;
+}
+.cart-item-quantity-minus:hover {
+  font-size: 1.4em;
+  background-color: red;
+  color: #fff;
+}
+
+.cart-item-quantity-plus:hover {
+  font-size: 1.4em;
+
+  background-color: #21d192;
+  color: #fff;
+}
+
+.subtotal-checkout {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.subtotal-checkout h3 {
+  color: #089664;
+  /* font-size: 1.2em; */
+  width: fit-content;
+}
+
+.subtotal-checkout button {
+  width: 100px;
+  font-size: 1.2em;
+}
